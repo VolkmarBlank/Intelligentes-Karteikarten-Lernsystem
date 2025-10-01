@@ -1,0 +1,87 @@
+# /* static/styles.css */
+
+/* 1) Background auf html legen, damit es immer 100% Breite/Höhe füllt */
+html {
+  background: url('/images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) Body transparent und voller höhe */
+body {
+  background: none;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(48, 6, 6);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+  /* Überschrift weiß färben */
+h1 {
+    color: white;
+    /* optional: schöner Kontrast auf dem Hintergrund */
+    text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.7);
+  }
+  
+  
+  /* ② Container etwas weicher und zentriert */
+  .container {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* ③ Karten leicht transparent, abgerundet */
+  .card {
+    background-color: rgba(127, 207, 141, 0.582);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(20, 2, 2, 0.719);
+  }
+
+  /* 5) Buttons in den Karten hellbraun (tan) */
+.card button {
+  background-color: #f19722;       /* tan */
+  border: 1px solid #a86929;
+  color: black;
+  …
+}
+
+  
+  /* ④ Buttons etwas mehr Abstand */
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  /* Kopf-Bereich komplett in Weiß mit dezentem Schwarz-Schatten */
+#controls,
+#controls * {
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Optional: Buttons im Kopfbereich etwas hervorheben */
+#controls button {
+  background-color: rgba(255,255,255,0.9);
+  color: #5e31a7 !important;
+  border: 1px solid #ccc;
+}
+#controls button:hover {
+  background-color: rgb(243, 240, 241);
+}
+
+/* 6) Stats-Text („Gesamt: …“) in Weiß mit Schatten */
+#cards > p:first-of-type {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
