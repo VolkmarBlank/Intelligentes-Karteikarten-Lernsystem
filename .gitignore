@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.eggs/
+
+# Environments
+.env
+.venv/
+venv/
+
+# Databases / state
+*.db
+instance/
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+Sicherung/
+backup/
